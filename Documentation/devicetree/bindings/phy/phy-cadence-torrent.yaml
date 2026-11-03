@@ -101,6 +101,15 @@ patternProperties:
         $ref: /schemas/types.yaml#/definitions/uint32
         enum: [1, 2, 3, 4, 5, 6, 7, 8, 9, 12]
 
+      cdns,phy-mode:
+        description:
+          Specifies an optional mode of PHY for which the group of PHY lanes is used.
+          Refer include/dt-bindings/phy/phy-cadence.h for the constants to be used.
+        $ref: /schemas/types.yaml#/definitions/uint32
+        minimum: 0
+        maximum: 63
+        default: 0
+
       cdns,num-lanes:
         description:
           Number of lanes.
