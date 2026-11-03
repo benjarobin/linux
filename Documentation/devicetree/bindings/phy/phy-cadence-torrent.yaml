@@ -106,7 +106,6 @@ patternProperties:
           Number of lanes.
         $ref: /schemas/types.yaml#/definitions/uint32
         enum: [1, 2, 3, 4]
-        default: 4
 
       cdns,ssc-mode:
         description:
